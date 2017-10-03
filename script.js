@@ -1,4 +1,8 @@
 var sentences = ['ten ate neite ate nee enet ite ate inet ent eate', 'Too ato too nOt enot one totA not anot tOO aNot', 'oat itain oat tain nate eate tea anne inant nean', 'itant eate anot eat nato inate eat anot tain eat', 'nee ene ate ite tent tiet ent ine ene ete ene ate'];
+var numb = 0,
+    numb1 = 1,
+    sent = 1;
+
 $(document).ready(function() {
     $("#keyboard-upper-container").hide();
     $(document).keydown(function (shift){
@@ -14,17 +18,31 @@ $(document).ready(function() {
         }
     })
     $(document).keypress(function(e) {
-        $("#" + e.which).css("background-color", "yellow");
-        console.log(e.which);
+        $("#" + e.which).css("background-color", "#00bfff");
     });
     $(document).keyup(function(e) {
         var num = (document).getElementsByClassName("key")
-        if (num.backgroundColor = "yellow") {
+        if (num.backgroundColor = "#00bfff") {
             $(num).css("background-color", "#f5f5f5");
         }
-    //     $("#" + e.which).css("background-color", "#f5f5f5");
-    //     console.log(e.which);
     });
-
-    $("#sentence").text(sentences[0])
+    $("#sentence").text(sentences[sent])
+    $("#target-letter").text(sentences[sent].charAt(0));
+    var n = sentences[sent].charAt(numb++);
+    $("#feedback").append("<span class='glyphicon'></span>")
+    $(document).keypress(function(e) {
+        var a = String.fromCharCode(e.which);
+        if (a === n) {
+            n = sentences[sent].charAt(numb++);
+            var n1 = sentences[sent].charAt(numb1++);
+            $("#target-letter").text(n1);
+            $(".glyphicon").removeClass("glyphicon-remove").addClass("glyphicon-ok")
+            var sentlen = sentences[sent].length;
+            if (numb === sentences[sent].length){
+                sent = 1;
+            }
+        } else {
+            $(".glyphicon").removeClass("glyphicon-ok").addClass("glyphicon-remove")
+        }
+    });
 });

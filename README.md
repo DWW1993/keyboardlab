@@ -31,15 +31,15 @@
 
 * While the shift key is held down, hide the lowercase keyboard and show the uppercase one
 
-* When the shift key is released, show the lowercase keyboard and hide the uppercase one -->
+* When the shift key is released, show the lowercase keyboard and hide the uppercase one
 
 * When keys are pressed, they should be highlighted in the browser.
 
-* Hint: the letters should be matched with the corresponding ascii code. The id value of the key in the html corresponds to the ASCII character code that you can access in the keyboard listener. For example, ascii value 65 is A, and 97 is a.
+* Hint: the letters should be matched with the corresponding ascii code. The id value of the key in the html corresponds to the ASCII character code that you can access in the keyboard listener. For example, ascii value 65 is A, and 97 is a. -->
 
 * The sentences in the provided array should be displayed at the top of the page one sentence at a time. Once the sentence has been completed, the next in line should appear. There is already a div with id="sentence" in your html file. This is where you will display the sentences one at a time.
 
-```
+<!-- ```
 
 var sentences = ['ten ate neite ate nee enet ite ate inet ent eate',
 
@@ -49,11 +49,11 @@ nate eate tea anne inant nean', 'itant eate anot eat nato inate eat
 
 anot tain eat', 'nee ene ate ite tent tiet ent ine ene ete ene ate'];
 
-```
+``` -->
 
 * You should highlight the currently expected letter in the on-screen sentence that should be typed next
 
-* You can use the div with id="yellow-block" and nudge it along a fixed number of pixels if you'd like
+<!-- * You can use the div with id="yellow-block" and nudge it along a fixed number of pixels if you'd like -->
 
 * Hint: if you don't want to use the animation to do the yellow block then you might want to use backgroundColor on the text (var sentence = 'hello'; var sentenceArray = sentence.split(''); then loop through and create spans for each letter, with an id, and then you can set a background color on each span).
 
