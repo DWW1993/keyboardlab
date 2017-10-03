@@ -7,7 +7,7 @@
 
 ## Info
 
-* You are going to build a typing game
+<!-- * You are going to build a typing game
 
 * This lab uses the Bootstrap UI Framework. It is already imported for you.
 
@@ -15,11 +15,11 @@
 
 * Make sure you import JQuery into your html file
 
-* You will also need to import your own JavaScript file
+* You will also need to import your own JavaScript file -->
 
 ## Objectives
 
-* (ALREADY COMPLETE) Create two keyboards (include space bar):
+<!-- * (ALREADY COMPLETE) Create two keyboards (include space bar):
 
 * First keyboard, lowercase keys, numbers and special characters accessed without shift
 
@@ -31,7 +31,7 @@
 
 * While the shift key is held down, hide the lowercase keyboard and show the uppercase one
 
-* When the shift key is released, show the lowercase keyboard and hide the uppercase one
+* When the shift key is released, show the lowercase keyboard and hide the uppercase one -->
 
 * When keys are pressed, they should be highlighted in the browser.
 
