@@ -18,7 +18,7 @@ $(document).ready(function() {
         console.log(e.which);
     });
     $(document).keyup(function(e) {
-        var num = (document).getElementsByTagName("span")
+        var num = (document).getElementsByClassName("key")
         if (num.backgroundColor = "yellow") {
             $(num).css("background-color", "#f5f5f5");
         }
